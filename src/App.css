@@ -163,3 +163,94 @@ body {
 .flex-c {
     flex-direction: column;
 }
+@media (max-width: 1200px) {
+  .app {
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 30px;
+  }
+  
+  .app {
+    width: 90%;
+    max-width: 400px;
+    padding: 25px 20px;
+  }
+  
+  .app h1 {
+    font-size: 24px;
+  }
+  
+  .input-wrapper button {
+    padding: 0 15px;
+  }
+  
+  .tempstats h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px;
+  }
+  
+  .app {
+    width: 95%;
+    padding: 20px 15px;
+    border-radius: 15px;
+  }
+  
+  .input-wrapper {
+    flex-direction: column;
+    background: transparent;
+    border: none;
+  }
+  
+  .input-wrapper input {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+  }
+  
+  .input-wrapper button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+  }
+  
+  .location h2 {
+    font-size: 20px;
+  }
+  
+  .tempstats h1 {
+    font-size: 40px;
+  }
+  
+  .weatherdesc img {
+    max-width: 60px;
+  }
+  
+  .windstats h3 {
+    font-size: 14px;
+  }
+  
+  .datetext {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .app {
+    width: 500px;
+    padding: 35px 30px;
+  }
+  
+  .app h1 {
+    font-size: 32px;
+  }
+}
