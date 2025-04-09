@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    background: linear-gradient(135deg, #ef3d43, #fad0c4, #a18cd1, #fbc2eb);
+    background-size: 400% 400%;
+    animation: gradientFlow 15s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.app {
+    width: 450px;
+    padding: 30px 25px;
+    color: #ffffff;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #0f172a, #1e293b);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.app h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #f472b6;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.input-wrapper {
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.input-wrapper input {
+    flex: 1;
+    padding: 12px 14px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+    backdrop-filter: blur(6px);
+}
+
+.input-wrapper input::placeholder {
+    color: #cbd5e1;
+}
+
+.input-wrapper button {
+    background: linear-gradient(to right, #7f00ff, #e100ff);
+    color: #fff;
+    border: none;
+    padding: 0 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.input-wrapper button:hover {
+    filter: brightness(1.2);
+}
+
+.content {
+    background: rgba(208, 89, 89, 0.05);
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    color: #f8fafc;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.location {
+    margin-bottom: 10px;
+}
+
+.location h2 {
+    font-weight: 500;
+    font-size: 22px;
+    margin: 0;
+    color: #facc15;
+}
+
+.location h2 span {
+    font-size: 14px;
+    color: #e0f2fe;
+}
+
+.datetext {
+    font-size: 13px;
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+.weatherdesc h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #93c5fd;
+}
+
+.tempstats {
+    padding: 15px 0;
+}
+
+.tempstats h1 {
+    font-size: 60px;
+    font-weight: 300;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.tempstats h1 span {
+    font-size: 32px;
+    color: #f472b6;
+}
+
+.tempstats h3 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #cbd5e1;
+}
+
+.windstats {
+    padding: 10px 16px;
+    background: rgba(156, 60, 60, 0.06);
+    margin-top: 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.windstats h3 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #38bdf8;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-c {
+    flex-direction: column;
+}
