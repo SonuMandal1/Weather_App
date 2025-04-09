@@ -31,41 +31,58 @@ A sleek and modern weather forecast web app that displays real-time weather data
    git clone https://github.com/SonuMandal1/Weather_App.git
    cd Weather_App
 
+   ```
 
-## Available Scripts
+2. **Open `index.html` in your browser**
+   - You can use **Live Server** in VS Code or double-click to open directly.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🌐 API Integration
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project uses the [OpenWeatherMap API](https://openweathermap.org/api) to fetch real-time weather data.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🔑 Get Your API Key
 
-### `npm test`
+1. Go to [https://openweathermap.org/](https://openweathermap.org/)
+2. Create a free account and navigate to the **API Keys** section
+3. Copy your **API key**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🧩 Add API Key to the Project
 
-### `npm run build`
+1. Open the `script.js` file
+2. Replace the placeholder with your actual key:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```js
+   const API_KEY = "your_api_key_here"; // 🔁 Replace with your real key
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📁 Project Structure
 
-### `npm run eject`
+```
+Weather_App/
+├── index.html         # Main HTML structure
+├── style.css          # Styling with gradients and UI design
+├── script.js          # JS logic, fetch weather data
+└── README.md          # Project documentation
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📌 Notes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Ensure you are connected to the internet to fetch data from the API.
+- The free OpenWeatherMap tier may have some request limits.
+- For best experience, open in latest Chrome/Edge/Firefox browsers.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+> Made with ❤️ by [Sonu Mandal](https://github.com/SonuMandal1)
